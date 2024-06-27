@@ -2,8 +2,9 @@ function generateDisplay(
     guessedLetters:string[], 
     wordToGuess:string
 ): string[] {
-    const wordWithCorrectGuesses = wordToGuess.split('').map(() => '_')
+    const wordArrayWithCorrectGuesses = wordToGuess.split('').map(() => '_')
 
+    return wordArrayWithCorrectGuesses
 
 guessedLetters.push(wordToGuess)
 return guessedLetters
